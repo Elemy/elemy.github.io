@@ -51,12 +51,24 @@ export default {
 </script>
 
 <style lang="less">
+*{
+  padding: 0;
+  margin: 0;
+}
+html,body{
+  height: 100%;
+}
 #app {
   font-family: 'PingFang SC', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  height: 100%;
   color: #2c3e50;
+}
+.el-row,.animatoggle,.left-nav{
+  height: 100%;
+  box-sizing: border-box;
 }
 .el-row {
   margin-bottom: 20px;
@@ -131,8 +143,8 @@ export default {
   display: block;
 }
 .menu-icon:after {
-  content: '╳';
-  font-size: .75em;
+  content: '×';
+  font-size: 1.2em;
   font-weight: 800;
   display: none;
 }
