@@ -20,7 +20,13 @@
             })();
             
         </script>
-                    
+        <script>
+            var reg = new RegExp("(^|&)"+ 'qdID' +"=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            var qdID = r?r[2]:'xzs';
+            console.log(qdID);
+            _hmt.push(['_setCustomVar', 2, 'qdID', qdID]);
+        </script>
         百度统计测试
         <br/>
         <a onclick="_hmt.push(['_trackEvent', '测试统计', '点击', '百度统计测试1'])" 
